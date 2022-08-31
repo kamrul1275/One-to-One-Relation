@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PhoneController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',  [PhoneController::class, 'index']);
+
+
+
+Route::get('/post',  [PostController::class, 'postView']);
